@@ -13,3 +13,11 @@ let creatBigGrid = function () {
   }
 };
 creatBigGrid();
+
+const boxes = document.querySelectorAll('.box');
+
+for (let box of boxes) {
+  box.addEventListener('mouseover', function (event) {
+    box.style.backgroundColor = 'grey';
+  });
+}
